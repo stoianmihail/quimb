@@ -502,3 +502,6 @@ __all__ = [
     "NEUTRAL_STYLE",
     "default_to_neutral_style",
 ]
+
+from . import _version
+__version__ = _version.get_versions()['version']

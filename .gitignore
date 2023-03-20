@@ -129,4 +129,3 @@ docs/autoapi
 
 # quimb specific
 ctg_cache
-quimb/_version.py

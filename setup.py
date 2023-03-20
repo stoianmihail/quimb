@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-
+import versioneer
 
 def readme():
     with open('README.rst') as f:
@@ -12,6 +12,8 @@ def readme():
 
 setup(
     name='quimb',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='Quantum information and many-body library.',
     long_description=readme(),
     long_description_content_type='text/x-rst',
